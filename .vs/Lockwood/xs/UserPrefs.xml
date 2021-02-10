@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{C63DC295-9F83-4A3F-233E-0D5329F02082}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MonoBehaviours/Wander.cs">
+    <Files>
+      <File FileName="Assets/Scripts/MonoBehaviours/Enemy.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/MonoBehaviours/Wander.cs" Line="171" Column="54" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Lockwood" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="MonoBehaviours" expanded="True">
+                  <Node name="Wander.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="867fc02c-b169-4ce5-b0d6-c071aa805ad1" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
