@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6790943429747121319}
   - component: {fileID: 6287943531931832520}
-  m_Layer: 8
+  m_Layer: 5
   m_Name: SpawnPoint
   m_TagString: enemy
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -44,3 +44,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabToSpawn: {fileID: 1588035667904728779, guid: d0aec8e559a383a4f9f236273f8e0d88, type: 3}
+  repeatInterval: 0

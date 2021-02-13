@@ -12,6 +12,9 @@ public class RPGGameManager : MonoBehaviour
     public ChestSpawnPoint chestSpawnPointM;
     public ChestSpawnPoint chestSpawnPoint;
 
+    //Test Variable
+    public int random;
+
     // A variable used to access the singleton object
     public static RPGGameManager sharedInstance = null;
 
@@ -39,7 +42,7 @@ public class RPGGameManager : MonoBehaviour
 
     public void SetupScene()
     {   
-        int random = Random.Range(0,5);
+        //int random = Random.Range(0,5);
         SpawnChest(random);
     }
 
