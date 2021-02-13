@@ -9119,7 +9119,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5231628568538911797, guid: 4886dfc3f09433f4b93660603afd6f7a, type: 3}
       propertyPath: random
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5231628568538911797, guid: 4886dfc3f09433f4b93660603afd6f7a, type: 3}
       propertyPath: chestSpawnPoint
