@@ -5,12 +5,12 @@ using UnityEngine;
 public class RPGGameManager : MonoBehaviour
 {
     // Reference to the spawn points
-    public SpawnPoint chestSpawnPointTR;
-    public SpawnPoint chestSpawnPointT;
-    public SpawnPoint chestSpawnPointTL;
-    public SpawnPoint chestSpawnPointBR;
-    public SpawnPoint chestSpawnPointM;
-    public SpawnPoint chestSpawnPoint;
+    public ChestSpawnPoint chestSpawnPointTR;
+    public ChestSpawnPoint chestSpawnPointT;
+    public ChestSpawnPoint chestSpawnPointTL;
+    public ChestSpawnPoint chestSpawnPointBR;
+    public ChestSpawnPoint chestSpawnPointM;
+    public ChestSpawnPoint chestSpawnPoint;
 
     // A variable used to access the singleton object
     public static RPGGameManager sharedInstance = null;

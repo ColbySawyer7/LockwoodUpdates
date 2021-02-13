@@ -7,7 +7,7 @@ public class ChestController : MonoBehaviour
 {
 
     // Reference to TimerController; Allows us to pause the timer.
-    public TimerController TimeController;
+    //public TimerController TimeController;
 
     // List of available sprite states. Set in inspector.
     public Sprite[] SpriteStates;
@@ -43,7 +43,7 @@ public class ChestController : MonoBehaviour
             {
 
                 RendererObject.sprite = SpriteStates[1];
-                TimeController.Pause();
+                //TimeController.Pause();
 
             }
         }

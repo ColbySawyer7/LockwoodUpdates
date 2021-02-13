@@ -9,11 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6790943429747121319}
-  - component: {fileID: 6790943429747121312}
+  - component: {fileID: 6287943531931832520}
   m_Layer: 8
   m_Name: SpawnPoint
   m_TagString: enemy
-  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -31,7 +31,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6790943429747121312
+--- !u!114 &6287943531931832520
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,8 +40,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6790943429747121313}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce47ac70f03e74548b07ae9e0433c971, type: 3}
+  m_Script: {fileID: 11500000, guid: 244b5d854bd604d46bbec145149fec86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabToSpawn: {fileID: 0}
-  repeatInterval: 30
+  prefabToSpawn: {fileID: 1588035667904728779, guid: d0aec8e559a383a4f9f236273f8e0d88, type: 3}
