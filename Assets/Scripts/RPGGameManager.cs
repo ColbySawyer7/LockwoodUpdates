@@ -5,6 +5,8 @@ using UnityEngine;
 public class RPGGameManager : MonoBehaviour
 {
     // Reference to the spawn points
+    private ChestSpawnPoint[] chestSpawns = new ChestSpawnPoint[6];
+
     public ChestSpawnPoint chestSpawnPointTR;
     public ChestSpawnPoint chestSpawnPointT;
     public ChestSpawnPoint chestSpawnPointTL;
@@ -17,7 +19,7 @@ public class RPGGameManager : MonoBehaviour
     public GameObject PlayerController;
 
     //Test Variable
-    public int random;
+    //public int random;
 
     // A variable used to access the singleton object
     public static RPGGameManager sharedInstance = null;
@@ -44,9 +46,14 @@ public class RPGGameManager : MonoBehaviour
         SetupScene();        
     }
 
+    /*public void initializeSpawnPoints(){
+        ChestSpawnPoint[0] = new chestSpawnPoint()
+    }
+*/
     public void SetupScene()
     {   
-        //int random = Random.Range(0,5);
+        int random = Random.Range(0,5);
+        Debug.Log(random);
         SpawnChest(random);
     }
 

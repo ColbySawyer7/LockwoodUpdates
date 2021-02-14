@@ -14,12 +14,14 @@ public class ChestController : MonoBehaviour
     // SpriteRenderer reference. Used to change sprite when the chest is toggled.
     private SpriteRenderer RendererObject;
 
-    public TimerController TimeController;
+    private GameObject timer;
+
+    private TimerController TimeController;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        timer = GameObject.FindWithTag("TimerController");
         this.ToggleObject = ScriptableObject.CreateInstance("Toggleable") as Toggleable;
         this.RendererObject = GetComponent<SpriteRenderer>();
 
@@ -28,11 +30,7 @@ public class ChestController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-    }
-
-    public void setTimer(TimerController timeController){
-        TimeController = timeController;
+     TimeController = timer.GetComponent<TimerController>();
     }
 
     // Called by the Unity engine whenever the current enemy object's Collider2D makes contact with another object's Collider2D
