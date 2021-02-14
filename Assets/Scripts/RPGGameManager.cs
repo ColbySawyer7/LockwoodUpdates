@@ -7,16 +7,11 @@ public class RPGGameManager : MonoBehaviour
     // Reference to the spawn points
     private ChestSpawnPoint[] chestSpawns = new ChestSpawnPoint[6];
 
-    public ChestSpawnPoint chestSpawnPointTR;
-    public ChestSpawnPoint chestSpawnPointT;
-    public ChestSpawnPoint chestSpawnPointTL;
-    public ChestSpawnPoint chestSpawnPointBR;
-    public ChestSpawnPoint chestSpawnPointM;
-    public ChestSpawnPoint chestSpawnPoint;
-
     public TimerController TimeController;
 
     public GameObject PlayerController;
+    
+    public GameObject chestSpawnPrefab;
 
     //Test Variable
     //public int random;
@@ -43,48 +38,24 @@ public class RPGGameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SetupScene();        
+        initializeSpawnPoints(); 
+        SetupScene();
     }
 
-    /*public void initializeSpawnPoints(){
-        ChestSpawnPoint[0] = new chestSpawnPoint()
+    public void initializeSpawnPoints(){
+        chestSpawns[0] = Instantiate(chestSpawnPrefab, new Vector3(6.5f,6.5f,0.0f), Quaternion.identity).GetComponent<ChestSpawnPoint>();
+        chestSpawns[1] = Instantiate(chestSpawnPrefab, new Vector3(11.5f,5.0f,0.0f), Quaternion.identity).GetComponent<ChestSpawnPoint>();
+        chestSpawns[2] = Instantiate(chestSpawnPrefab, new Vector3(1.5f,6.5f,0.0f), Quaternion.identity).GetComponent<ChestSpawnPoint>();
+        chestSpawns[3] = Instantiate(chestSpawnPrefab, new Vector3(-9.0f,6.5f,0.0f), Quaternion.identity).GetComponent<ChestSpawnPoint>();
+        chestSpawns[4] = Instantiate(chestSpawnPrefab, new Vector3(11.5f,-5.5f,0.0f), Quaternion.identity).GetComponent<ChestSpawnPoint>();
+        chestSpawns[5] = Instantiate(chestSpawnPrefab, new Vector3(1.5f,1.5f,0.0f), Quaternion.identity).GetComponent<ChestSpawnPoint>();
     }
-*/
+
     public void SetupScene()
     {   
         int random = Random.Range(0,5);
         Debug.Log(random);
-        SpawnChest(random);
+        GameObject chest = chestSpawns[random].SpawnObject();
     }
 
-    // Create a new player object if one does not already exist
-    public void SpawnChest(int random)
-    {
-        if(random == 5){
-            if (chestSpawnPointT != null){
-                GameObject chest = chestSpawnPointT.SpawnObject();
-            }
-        }else if(random == 4){
-            if (chestSpawnPointTL != null){
-                GameObject chest = chestSpawnPointTL.SpawnObject();
-            }
-        }else if(random == 3){
-            if (chestSpawnPointTR != null){
-                GameObject chest = chestSpawnPointTR.SpawnObject();
-            }
-        }else if(random == 2){
-            if (chestSpawnPointBR != null){
-                GameObject chest = chestSpawnPointBR.SpawnObject();
-            }
-
-        }else if(random == 1){
-            if (chestSpawnPointM != null){
-                GameObject chest = chestSpawnPointM.SpawnObject();
-            }
-        }else{
-            if (chestSpawnPoint != null){
-                GameObject chest = chestSpawnPoint.SpawnObject();
-            }
-        }
-    }
 }
