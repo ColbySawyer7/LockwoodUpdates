@@ -25,7 +25,8 @@ public class ChestSpawnPoint : MonoBehaviour
         {
             // Instantiate the prefab at the location of the current SpawnPoint object
             // Quaternion is a data structure used to represent rotations; identity = no rotation
-            return Instantiate(prefabToSpawn, transform.position, Quaternion.identity);
+           return Instantiate(prefabToSpawn, transform.position, Quaternion.identity);
+            
         }
 
         return null;

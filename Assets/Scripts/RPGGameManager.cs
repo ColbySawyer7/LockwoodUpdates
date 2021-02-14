@@ -12,6 +12,10 @@ public class RPGGameManager : MonoBehaviour
     public ChestSpawnPoint chestSpawnPointM;
     public ChestSpawnPoint chestSpawnPoint;
 
+    public TimerController TimeController;
+
+    public GameObject PlayerController;
+
     //Test Variable
     public int random;
 

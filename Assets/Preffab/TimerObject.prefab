@@ -163,6 +163,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &4399218846374412409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,4 +234,4 @@ MonoBehaviour:
   GameOverText: {fileID: 0}
   RestartButton: {fileID: 0}
   PlayerController: {fileID: 0}
-  timeLimit: 0
+  timeLimit: 60000
